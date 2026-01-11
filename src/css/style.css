@@ -88,6 +88,25 @@
 
 /* Global styles */
 
+/* header */
+.global-header{
+  background-color: var(--bs-black);
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+.global-header .icon{
+  width: 30px;
+  height: 30px;
+}
+
+.global-header_right{
+  display: flex;
+  align-items: center;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -167,7 +186,7 @@ a:hover {
   overflow: hidden;
 }
 
-svg {
+/* svg {
   background-color: var(--bs-black);
   fill: white;
-}
+} */
