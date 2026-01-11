@@ -16,9 +16,9 @@ function parkTemplate(info) {
 }
 
 
-document.querySelector("head > title").textContent = parkData.fullName;
+document.querySelector("head title").textContent = parkData.fullName;
 
-document.querySelector(".hero-banner > img").src = parkData.images[0].url;
+document.querySelector(".hero-banner img").src = parkData.images[0].url;
 
 document.querySelector(".hero_content").innerHTML = parkTemplate(parkData);
 
