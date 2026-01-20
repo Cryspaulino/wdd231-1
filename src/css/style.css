@@ -336,7 +336,7 @@ main .info{
 }
 
 .cards{
-  width: 90%;
+  width: 33%;
 }
 
 main .info a{
@@ -347,8 +347,8 @@ main .info a{
 }
 
 .card_img{
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
 }
 
 
