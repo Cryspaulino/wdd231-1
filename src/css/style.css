@@ -330,13 +330,13 @@ main{
 
 main .info{
   display: flex;
-  /* flex-direction: row;  */
+  /* flex-direction: column;  */
   gap: 10px;
   justify-content: center;
 }
 
 .cards{
-  width: 33%;
+  width: 90%;
 }
 
 main .info a{
@@ -368,3 +368,26 @@ main .info a{
 .contact h3{
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 680px)
+{
+  .info{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cards{
+    width: 90%;
+  }
+  
+  .card_img{
+    width: 95%;
+    height: 250px;
+  }
+
+  /* header{
+    width: 90%;
+  } */
+}
+
