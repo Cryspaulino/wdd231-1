@@ -1,0 +1,16 @@
+#park-footer{
+  padding: 10px;
+  background-color: var(--bs-pampas);
+}
+
+.contact h4{
+  margin-bottom: 3px;
+}
+
+.contact p{
+  margin: 2px;
+}
+
+.contact h3{
+  text-transform: uppercase;
+}

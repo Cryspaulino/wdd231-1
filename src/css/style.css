@@ -1,246 +1,73 @@
-:root {
-  --bs-black: #000;
-  --bs-brown: #393423;
-  --bs-grey-2: #444;
-  --bs-grey-3: #ccc;
-  --bs-grey-4: #222;
-  --bs-grey-5: #333;
-  --bs-grey-6: #999;
-  --bs-cape-honey: #ffe9ab;
-  --bs-cerulean: #00aced;
-  --bs-code-grey: #1d1d1d;
-  --bs-chathams-blue: #0f4f7e;
-  --bs-chathams-blue-2: #005999;
-  --bs-chathams-blue-3: #87a7be;
-  --bs-chathams-blue-4: #e1ebf4;
-  --bs-crete: #4b5e26;
-  --bs-light-green: #eaf0dc;
-  --bs-dark-burgundy: #821206;
-  --bs-emperor: #4f4f4f;
-  --bs-madison: #093058;
-  --bs-pampas: #f6f5f0;
-  --bs-pablo: #73705f;
-  --bs-white: #fff;
-  --bs-pablo-2: #706d61;
-  --bs-purple: #44136c;
-  --bs-purple-2: #956cb7;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #4b5e26;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 75, 94, 38;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-serif: "Times New Roman", Times, serif;
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
-  --bs-body-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  --bs-body-font-size: 1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.75;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
-  --bs-border-width: 1px;
-  --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
-  --bs-border-radius-sm: 0.25rem;
-  --bs-border-radius-lg: 0.5rem;
-  --bs-border-radius-xl: 1rem;
-  --bs-border-radius-2xl: 2rem;
-  --bs-border-radius-pill: 50rem;
-  --bs-link-color: #005999;
-  --bs-link-hover-color: #003e6b;
-  --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
-}
-
-/* Global styles */
-
-/* Global header */
-.global-header{
-  background-color: var(--bs-black);
-  color: white;
-  display: flex;
-  text-decoration: none;
-  justify-content: space-between;
-  fill: white; 
-  /* fill makes the icons become that color */
-}
-
-.global-header a{
-  text-decoration: none;
-}
-
-.global-header h1{
-  color: white;
-}
-
-.global-header .icon{
-  width: 30px;
-  height: 30px;
-}
-
-.global-header_right{
-  display: flex;
-  align-items: center;
-}
-
-.global-header_right .search-icon{
-  padding: 5px 10px;
-  margin-right: 3px;
-  color: white;
-}
-
-.global-header_right button{
-  background-color: rgba(255, 255, 255, 0);
-  height: 50px;
-  color: white;
-  font-size: 25px;
-  align-items: center;
-  border: none;
-  border-left: 1px solid var(--bs-body-color);
-  display: flex;
-  text-transform: uppercase;
-}
-
-/* Yellowstone band */
-.hero-banner{
-  display: grid;
-  grid-template-columns: 1fr;
-  /* color: white; */
-}
-
-.hero-banner img{
-  object-fit: cover;
-  width: 100%;
-  height: 1000px;
-  grid-column: 1/2;
-  grid-row: 1/3;
-}
-
-.hero_content a{
-  text-decoration: none;
-}
-
-.hero_content{
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.63);
-  grid-column: 1/2;
-  grid-row: 2/3;
-  font-size: 1.1em;
-}
-
-.hero_content, nav{
-  position: relative;
-  /* bottom: 150px; */
-  width: 100%;
-}
-
-.hero_title{
-  font-size: 2.2em;
-  padding-left: 40px;
-}
-
-
-.hero_title:link, .hero_title:visited{
-  color: white;
-}
-
-.hero_places{
-  display: flex;
-  flex-direction: column;
-  font-size: 1.3em;
-}
-
-.hero_subtitle{
-  display: flex;
-  flex-direction: column;
-  font-size: 1.03em;
-}
-/* Tag class is hero_places but it wouldn't show up with that name in the local host */
+@import "partials/variables.css";
+@import "partials/global.css";
+@import "partials/header.css";
+@import "partials/footer.css";
+@import "partials/blocks.css";
+@import "partials/utilities.css";
+@import "conditions.css";
+@import "main.css";
 
 /* Parks info */
-
-nav{
-  display: flex;
-  justify-content: center;
+nav {
+  /* display: flex; */
+  padding-left: 20px;
   background-color: var(--bs-black);
   color: white;
-  height: 100px;
+  height: auto;
   align-items: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-block: 0;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    width: 140px;
+    justify-content: center;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-nav ul{
-  list-style: none;
+.global-nav__split-button {
   display: flex;
-  padding: 0;
-  margin-block: 0;
+
+  a {
+    width: 150px;
+    padding-left: 20px;
+  }
 }
 
-nav li{
-  display: flex;
-  width: 140px;
-  justify-content: center;
-}
-
-nav a{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-decoration: none;
-  padding: 10px;
-}
-
-nav a:link, nav a:visited{
-  color: white;
-}
-
-nav svg{
-  width: 30px;
+.global-nav__split-button__toggle {
+  border: none;
+  width: 27px;
   height: 30px;
 }
 
-
+nav a:link,
+nav a:visited {
+  color: white;
+}
 
 * {
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
@@ -285,24 +112,7 @@ a:hover {
 
 /* Title and logo styling */
 
-.site-title {
-  display: flex;
-  align-items: center;
-}
-.site-title > span {
-  font-size: 1rem;
-  margin-left: 0.3em;
-}
 
-.logo {
-  height: 0;
-  width: 0;
-  margin: 0.5em;
-  display: inline-block;
-  border-top: 34px solid var(--bs-light-green);
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-}
 
 /* Utility styles */
 
@@ -318,76 +128,3 @@ a:hover {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* svg {
-  background-color: var(--bs-black);
-  fill: white;
-} */
-main{
-  margin: 10px;
-
-}
-
-main .info{
-  display: flex;
-  /* flex-direction: column;  */
-  gap: 10px;
-  justify-content: center;
-}
-
-.cards{
-  width: 33%;
-}
-
-main .info a{
-  text-decoration: none; 
-  color: black;
-  font-size: .9em;
-  /* width: 90%; */
-}
-
-.card_img{
-  width: 400px;
-  height: 300px;
-}
-
-
-#park-footer{
-  padding: 10px;
-  background-color: var(--bs-pampas);
-}
-
-.contact h4{
-  margin-bottom: 3px;
-}
-
-.contact p{
-  margin: 2px;
-}
-
-.contact h3{
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 680px)
-{
-  .info{
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .cards{
-    width: 90%;
-  }
-  
-  .card_img{
-    width: 95%;
-    height: 250px;
-  }
-
-  /* header{
-    width: 90%;
-  } */
-}
-
